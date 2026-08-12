@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Tracker Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <header>
+        <h1>Crypto Price Tracker</h1>
+        <p>Fetch real-time crypto prices directly from a live REST API</p>
+      </header>
+
+      <form id="search-form">
+        <input
+          type="text"
+          id="crypto-input"
+          placeholder="Enter crypto ID (e.g., bitcoin, ethereum, cardano)..."
+          autocomplete="off"
+        />
+        <button type="submit" id="search-btn">Search</button>
+      </form>
+
+      <div id="results-container">
+        <p class="placeholder-text">
+          Type a cryptocurrency ID above and hit Search!
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
